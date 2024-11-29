@@ -40,10 +40,16 @@ svg {
 .user-card {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.user-profile {
+  display: inline-block;
+  vertical-align: middle;
   font-size: 12px;
 }
 
-.user-photoUrl {
+.profile-picture {
   height: 40px;
   width: 40px;
   border: 1px solid #ffa726;
