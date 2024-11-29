@@ -33,8 +33,8 @@ export default function UserTGData () {
     if (!user.username) return <div>Set Telegram username</div>
 
     return (
-        <div>
-            <div>{user.photoUrl && <img src={user.photoUrl} alt="Profile" />}</div>
+        <div className="user-profile">
+            <div className="user-photoUrl">{user.photoUrl && <img src={user.photoUrl} alt="Profile" />}</div>
             <p>{user.username}</p>
         </div>
     );

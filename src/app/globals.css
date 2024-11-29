@@ -1,42 +1,50 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 * {
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Poppins", serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@media (width >= 481px) {
+  * {
+      display: none;
   }
+}
+
+/* color palette:
+#002640, #003959 - light shades
+#ffa726 (Orange)
+#002266 deep blue
+#f0f0f0 (Light Gray)
+#b0b0b0 (Medium Gray)
+*/
+
+body {
+  background-color: #001321;
+  color: #FFFFFF;
+  display: block;
+  height: 100vh;
+  padding-bottom: 5rem;
+}
+
+header, main {
+  padding: 1rem 1.5rem;
+}
+
+svg {
+  width: 24px;
+  height: 24px;
+  margin: 0 0.5rem;
+  filter: brightness(0) invert(1);
+}
+
+.user-card {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.user-photoUrl {
+  height: 40px;
+  width: 40px;
+  border: 1px solid #ffa726;
 }
