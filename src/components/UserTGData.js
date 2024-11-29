@@ -14,7 +14,7 @@ export default function UserTGData () {
     useEffect(() => {
         if (isClient && window.Telegram?.WebApp) {
             // Retrieve user data from Telegram WebApp SDK
-            const tgUser = window.Telegram.WebApp.initDataUnsafe.User;
+            const tgUser = window.Telegram.WebApp.initDataUnsafe?.user;
 
             if (tgUser) {
                 setUser({
