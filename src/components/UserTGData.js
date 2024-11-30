@@ -35,7 +35,7 @@ export default function UserTGData () {
     return (
         <div className="user-card">
             <div className="user-profile">
-                <span className="profile-picture">{user.photoUrl && <img src={user.photoUrl} alt="Profile" />}</span>
+                {user.photoUrl && <img className="user-photo" src={user.photoUrl} />}
                 <p>{user.username}</p>
             </div>
 

@@ -10,16 +10,8 @@
   }
 }
 
-/* color palette:
-#002640, #003959 - light shades
-#ffa726 (Orange)
-#002266 deep blue
-#f0f0f0 (Light Gray)
-#b0b0b0 (Medium Gray)
-*/
-
 body {
-  background-color: #001321;
+  background: linear-gradient(to top, #a87900 20%, #000000 80%);
   color: #FFFFFF;
   display: block;
   height: 100vh;
@@ -44,13 +36,14 @@ svg {
 }
 
 .user-profile {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.profile-picture {
-  height: 40px;
-  width: 40px;
-  border: 1px solid #ffa726;
+.user-photo {
+  height: 32px;
+  width: 32px;
+  border-radius: 20%;
+  margin-right: 0.5rem;
 }
