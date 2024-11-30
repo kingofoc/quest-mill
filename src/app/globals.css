@@ -42,8 +42,10 @@ svg {
 }
 
 .user-photo {
-  height: 32px;
-  width: 32px;
+  height: 34px;
+  width: 34px;
   border-radius: 20%;
+  border: 1px solid #a87900;
   margin-right: 0.5rem;
+  padding: 0.1rem;
 }
