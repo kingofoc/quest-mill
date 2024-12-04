@@ -1,0 +1,199 @@
+:root {
+  --background: #000000;
+  --color-white: #FFFFFF;
+  --color-gray: #5c5c5c;
+  --color-gold: #ffd700;
+  --color-darkgold: #B8860B;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", serif;
+}
+
+@media (width >= 481px) {
+  * {
+      display: none;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--color-white);
+  display: block;
+  height: 100vh;
+}
+
+header {
+  padding: 1rem 1.5rem;
+}
+
+svg {
+  width: 24px;
+  height: 24px;
+  margin: 0 0.5rem;
+  filter: brightness(0) invert(1);
+}
+
+.user-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.user-photo {
+  height: 34px;
+  width: 34px;
+  border-radius: 20%;
+  border: 1px solid #a87900;
+  margin-right: 0.5rem;
+  padding: 0.1rem;
+}
+
+
+/* user balance card style */
+.user-balance {
+  border-top: 1px solid var(--color-gray);
+  border-bottom: 1px solid var(--color-gray);
+  font-size: 12px;
+  padding: 0 1.5rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: var(--color-gray);
+}
+
+.balance-card {
+  border-left: 1px solid var(--color-gray);
+  border-right: 1px solid var(--color-gray);
+}
+
+.balance-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--color-gray);
+}
+
+.airdrop, .points {
+  text-align: center;
+  align-content: center;
+}
+
+.airdrop span,
+.points span {
+  font-size: 18px;
+  color: var(--color-white);
+  vertical-align: middle;
+}
+
+.balance-title {
+  margin-bottom: 0.3rem;
+}
+
+.coin-image {
+  vertical-align: middle;
+  margin-right: 0.3rem;
+  animation: glow 1s infinite alternate, rotate 10s infinite linear;
+}
+
+.unlock-rewards span {
+  animation: glow 1s infinite alternate-reverse;
+}
+
+@keyframes glow {
+  from {
+    filter: brightness(1);
+  }
+  to {
+    filter: brightness(3);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateY(2160deg);
+  }
+}
+
+.keys {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  color: var(--color-white);
+}
+
+.unlock-rewards {
+  color: var(--color-darkgold);
+  background-color: transparent;
+  outline: none;
+  border: 1px solid transparent;
+}
+
+.key-icon {
+  margin-right: 0.3rem;
+}
+
+.spin-container {
+  position: relative;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.spin-icon {
+  animation: glow 10s infinite alternate;
+}
+
+.rotate { 
+  animation: rotate 2s infinite linear; 
+}
+
+.spin-button {
+  background: var(--color-darkgold);
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+.reward-display {
+  font-size: 10px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.5s;
+  position: absolute;
+  top: 70px;
+  left: 40%;
+}
+
+.float-reward {
+  animation: float 2s forwards;
+}
+
+@keyframes float {
+  0% {
+    opacity: 1;
+    transform: translateY(100px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+}
