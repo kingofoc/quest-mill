@@ -1,5 +1,6 @@
 'use client'
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 
 export default function UserTGData () {
@@ -34,7 +35,7 @@ export default function UserTGData () {
 
     return (
         <div className="user-profile">
-            {user.photoUrl && <img className="user-photo" src={user.photoUrl} />}
+            {user.photoUrl && <Image className="user-photo" src={user.photoUrl} alt=""/>}
             <p>{user.username}</p>
         </div>
     )
