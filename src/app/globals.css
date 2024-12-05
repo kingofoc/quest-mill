@@ -21,9 +21,9 @@
   }
 }
 
-@media (height <= 700px) {
+@media (height <= 740px) {
   main {
-    padding-bottom: 5rem;
+    padding-bottom: 7rem;
   }
 }
 
@@ -43,6 +43,10 @@ svg {
   height: 24px;
   margin: 0 0.5rem;
   filter: brightness(0) invert(1);
+}
+
+a {
+  text-decoration: none;
 }
 
 .user-card {
@@ -233,4 +237,10 @@ svg {
   align-items: center;
   padding: 1.5rem 0;
   border-top: 1px solid var(--color-gray);
+}
+.footer-link {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-gray);
 }
