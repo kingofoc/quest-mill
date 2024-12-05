@@ -51,13 +51,13 @@ export default function SpinCoin () {
     return (
         <div>
             <div className={isRotating ? "rotate" : ''} style={{ marginTop: '20px' }}>
-                <Image className="spin-icon" src={coinImage} alt="" width={250} height={250} />
+                <Image className="spin-icon" src={coinImage} alt="" width={300} height={300} />
             </div>
             <div className={`reward-display ${isFloating ? "float-reward" : ''}`}>
                 {reward}
             </div>
             <div>
-                <button onClick={generatedReward} className="spin-button">
+                <button onClick={generatedReward} className={spinCount < 12 ? "spin-button" : "spin-cool"}>
                     <span>{spinCount < 12 ? 'Spin to earn' : 'Next spin in 24:58:45'}</span>
                 </button>
             </div>

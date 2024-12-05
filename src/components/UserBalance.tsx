@@ -55,7 +55,7 @@ export default function UserBalance () {
                 <div className="balance-box">
                     {airdrop.map((airdrop, index) => (
                         <div key={index} className="airdrop">
-                            <p className="balance-title">Airdrop Reward</p>
+                            <p className="balance-title">QuestMill Token</p>
                             <Image className="coin-image" src={coinImage} alt="" width={24} height={24} />
                             <span>{formatNumber(airdrop)}</span>
                         </div>
@@ -63,7 +63,7 @@ export default function UserBalance () {
 
                     {points.map((points, index) => (
                         <div key={index} className="points">
-                            <p className="balance-title">Generated Points</p>
+                            <p className="balance-title">QuestMill Points</p>
                             <Image className="coin-image" src={coinImage} alt="" width={24} height={24} />
                             <span>{formatNumber(points)}</span>
                         </div>

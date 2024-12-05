@@ -1,6 +1,7 @@
 import UserTGData from "@/components/UserTGData";
 import UserBalance from "@/components/UserBalance";
 import SpinCoin from "@/components/Spin";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -25,6 +26,8 @@ export default function Home() {
           <SpinCoin />
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 }
