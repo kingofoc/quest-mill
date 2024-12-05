@@ -158,12 +158,13 @@ svg {
 
 .spin-container {
   position: relative;
-  padding: 1rem 1.5rem;
+  padding: 0 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .spin-icon {
+  margin-top: 2rem;
   animation: glow 10s infinite alternate;
 }
 
@@ -174,8 +175,8 @@ svg {
 .spin-button {
   background: var(--color-gold);
   width: 100%;
-  padding: 0.8rem;
-  margin-top: 1rem;
+  padding: 1rem;
+  margin-top: 2rem;
   font-weight: 600;
   border: 1px solid transparent;
   border-radius: 10px;
@@ -183,8 +184,8 @@ svg {
 .spin-cool {
   background-color: var(--color-darkgold);
   width: 100%;
-  padding: 0.8rem;
-  margin-top: 1rem;
+  padding: 1rem;
+  margin-top: 2rem;
   font-weight: 600;
   border: 1px solid transparent;
   border-radius: 10px;
