@@ -72,7 +72,6 @@ a {
   padding: 0.1rem;
 }
 
-
 /* user balance card style */
 .user-balance {
   border-top: 1px solid var(--color-gray);
@@ -244,3 +243,6 @@ a {
   font-weight: 600;
   color: var(--color-gray);
 }
+
+
+/* Task page style */
