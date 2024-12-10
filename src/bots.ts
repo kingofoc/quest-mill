@@ -1,7 +1,9 @@
 import { Telegraf } from 'telegraf';
 import fetch from 'node-fetch';
 import { db } from './firebase';
+import dotenv from 'dotenv';
 
+dotenv.config();
 
 const BOT_TOKEN = process.env.BOT_TOKEN;
 const bot = new Telegraf(BOT_TOKEN);
