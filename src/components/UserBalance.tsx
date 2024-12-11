@@ -29,7 +29,7 @@ export default function UserBalance () {
                 setDiamondKey(result.map((item: { diamondKey: number }) => item.diamondKey));
                 setPlatinumKey(result.map((item: { platinumKey: number }) => item.platinumKey));
             } catch (error) {
-                console.error('Error fetching data:', error);
+                return <div>000</div>;
             }
         };
 

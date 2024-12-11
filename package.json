@@ -19,6 +19,7 @@
     "node-fetch": "^3.3.2",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106",
+    "react-router-dom": "^7.0.2",
     "telegraf": "^4.16.3"
   },
   "devDependencies": {
